@@ -9,10 +9,10 @@ const ItemSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    // quantity: {
-    //     type: Number,
-    //     default: 1
-    // }
+    quantity: {
+        type: Number,
+        default: 1
+    }
 });
 
 module.exports = Item = mongoose.model("item", ItemSchema);
